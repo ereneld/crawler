@@ -11,6 +11,11 @@ MIN_HIT_RATE = 0.1
 MAX_HIT_RATE = 1000.0
 DEFAULT_HIT_RATE = 100.0
 
+# Constants for queue capacity limits
+MIN_QUEUE_CAPACITY = 100
+MAX_QUEUE_CAPACITY = 100000
+DEFAULT_QUEUE_CAPACITY = 10000
+
 app = Flask(__name__)
 
 def is_valid_url(url):
@@ -52,6 +57,16 @@ def validate_parameters(data):
             errors.append(f"Parameter 'hit_rate' must be at least {MIN_HIT_RATE}")
         elif hit_rate > MAX_HIT_RATE:
             errors.append(f"Parameter 'hit_rate' must not exceed {MAX_HIT_RATE}")
+    
+    # Validate optional max_queue_capacity parameter
+    if 'max_queue_capacity' in data:
+        max_queue_capacity = data['max_queue_capacity']
+        if not isinstance(max_queue_capacity, int):
+            errors.append("Parameter 'max_queue_capacity' must be an integer")
+        elif max_queue_capacity < MIN_QUEUE_CAPACITY:
+            errors.append(f"Parameter 'max_queue_capacity' must be at least {MIN_QUEUE_CAPACITY}")
+        elif max_queue_capacity > MAX_QUEUE_CAPACITY:
+            errors.append(f"Parameter 'max_queue_capacity' must not exceed {MAX_QUEUE_CAPACITY}")
     
     return errors
 
@@ -95,6 +110,7 @@ def start_crawler():
         url = data['url'].strip()
         depth = data['depth']
         hit_rate = data.get('hit_rate', DEFAULT_HIT_RATE)  # Optional parameter with default
+        max_queue_capacity = data.get('max_queue_capacity', DEFAULT_QUEUE_CAPACITY)  # Optional parameter with default
         
         # TODO: Implement actual crawler job logic here
         # For now, just return success response with job details
@@ -105,7 +121,8 @@ def start_crawler():
             "parameters": {
                 "url": url,
                 "depth": depth,
-                "hit_rate": hit_rate
+                "hit_rate": hit_rate,
+                "max_queue_capacity": max_queue_capacity
             }
         }
         
