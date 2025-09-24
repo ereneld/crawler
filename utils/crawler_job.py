@@ -6,6 +6,7 @@ import queue
 import urllib.request
 import urllib.parse
 import urllib.error
+import ssl
 import re
 from collections import Counter
 from .html_parser import parse_html_content
@@ -40,12 +41,27 @@ class CrawlerJob(threading.Thread):
         self.last_request_time = 0
         self.request_interval = 1.0 / hit_rate  # seconds between requests
         
+        # SSL context configurations
+        self._setup_ssl_contexts()
+        
         # File paths
         self.status_file = os.path.join(CRAWLER_DIR, f"{crawler_id}.data")
         self.visited_file = os.path.join(DATA_DIR, "visited_urls.data")
         
         # Initialize status file
         self._update_status_file()
+    
+    def _setup_ssl_contexts(self):
+        """Setup SSL contexts for secure and permissive connections"""
+        # Primary context with full verification
+        self.ssl_context_secure = ssl.create_default_context()
+        
+        # Fallback context for sites with certificate issues
+        self.ssl_context_permissive = ssl.create_default_context()
+        self.ssl_context_permissive.check_hostname = False
+        self.ssl_context_permissive.verify_mode = ssl.CERT_NONE
+        
+        self._log("SSL contexts configured for secure and permissive connections")
     
     def _log(self, message):
         """Add log entry with timestamp"""
@@ -202,24 +218,48 @@ class CrawlerJob(threading.Thread):
                 }
             )
             
-            # Make HTTP request
-            with urllib.request.urlopen(req, timeout=10) as response:
-                if response.status != 200:
-                    self._log(f"HTTP {response.status} for {url}")
-                    return []
-                
-                # Read content
-                content = response.read()
-                
-                # Try to decode content
+            # Try with secure SSL context first, then fallback to permissive
+            html_content = None
+            for attempt, ssl_context in enumerate([self.ssl_context_secure, self.ssl_context_permissive], 1):
                 try:
-                    html_content = content.decode('utf-8')
-                except UnicodeDecodeError:
-                    try:
-                        html_content = content.decode('latin1')
-                    except UnicodeDecodeError:
-                        self._log(f"Could not decode content from {url}")
+                    with urllib.request.urlopen(req, timeout=10, context=ssl_context) as response:
+                        if response.status != 200:
+                            self._log(f"HTTP {response.status} for {url}")
+                            return []
+                        
+                        # Read content
+                        content = response.read()
+                        
+                        # Try to decode content
+                        try:
+                            html_content = content.decode('utf-8')
+                        except UnicodeDecodeError:
+                            try:
+                                html_content = content.decode('latin1')
+                            except UnicodeDecodeError:
+                                self._log(f"Could not decode content from {url}")
+                                return []
+                        
+                        # If we get here, the request was successful
+                        if attempt == 2:
+                            self._log(f"Successfully accessed {url} using permissive SSL context")
+                        break
+                        
+                except ssl.SSLError as e:
+                    if attempt == 1:
+                        self._log(f"SSL verification failed for {url}, trying with permissive context: {e}")
+                        continue
+                    else:
+                        self._log(f"SSL error for {url} even with permissive context: {e}")
                         return []
+                except Exception as e:
+                    if attempt == 2:
+                        raise  # Re-raise if this was the last attempt
+                    continue
+            
+            if html_content is None:
+                self._log(f"Failed to retrieve content from {url}")
+                return []
             
             # Mark as visited
             self._save_visited_url(url)
