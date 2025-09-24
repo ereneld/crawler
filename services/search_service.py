@@ -1,7 +1,6 @@
 import os
 import json
 import re
-from collections import defaultdict
 
 # Storage directories
 DATA_DIR = "data"

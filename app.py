@@ -1,7 +1,4 @@
 from flask import Flask, request, jsonify
-import re
-import time
-import threading
 from urllib.parse import urlparse
 from services.crawler_service import create_crawler, get_crawler_status, list_all_crawlers, stop_crawler
 from services.search_service import search_words, get_search_statistics, get_word_suggestions
@@ -76,7 +73,7 @@ def validate_crawler_parameters(data):
 
 
 @app.route('/crawler/create', methods=['POST'])
-def create_crawler():
+def create_crawler_endpoint():
     """Start a crawler job with the provided parameters"""
     try:
         # Get JSON data from request
