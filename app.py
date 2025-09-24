@@ -48,6 +48,18 @@ def validate_parameters(data):
     
     return errors
 
+def validate_search_parameters(data):
+    """Validate search parameters and return error if any"""
+    errors = []
+    
+    # Validate query parameter
+    if 'query' not in data:
+        errors.append("Missing required parameter: query")
+    elif not isinstance(data['query'], str) or not data['query'].strip():
+        errors.append("Parameter 'query' must be a non-empty string")
+    
+    return errors
+
 @app.route('/crawler/start', methods=['POST'])
 def start_crawler():
     """Start a crawler job with the provided parameters"""
@@ -93,6 +105,67 @@ def start_crawler():
             response_data["parameters"]["hit_rate"] = hit_rate
         
         return jsonify(response_data), 201
+        
+    except Exception as e:
+        return jsonify({
+            "error": "Internal server error",
+            "details": str(e)
+        }), 500
+
+@app.route('/search', methods=['POST'])
+def search():
+    """Search for URLs based on query string"""
+    try:
+        # Get JSON data from request
+        if not request.is_json:
+            return jsonify({
+                "error": "Content-Type must be application/json"
+            }), 400
+        
+        data = request.get_json()
+        if not data:
+            return jsonify({
+                "error": "Request body must contain valid JSON"
+            }), 400
+        
+        # Validate parameters
+        validation_errors = validate_search_parameters(data)
+        if validation_errors:
+            return jsonify({
+                "error": "Invalid parameters",
+                "details": validation_errors
+            }), 400
+        
+        # Extract validated parameters
+        query = data['query'].strip()
+        
+        # TODO: Implement actual search logic here
+        # For now, return mock search results
+        mock_results = [
+            {
+                "relevant_url": "https://example.com/article-1",
+                "origin_url": "https://example.com",
+                "depth": 1
+            },
+            {
+                "relevant_url": "https://example.com/docs/guide",
+                "origin_url": "https://example.com",
+                "depth": 2
+            },
+            {
+                "relevant_url": "https://blog.example.com/post-1",
+                "origin_url": "https://example.com",
+                "depth": 1
+            }
+        ]
+        
+        response_data = {
+            "query": query,
+            "results": mock_results,
+            "total_results": len(mock_results)
+        }
+        
+        return jsonify(response_data), 200
         
     except Exception as e:
         return jsonify({
