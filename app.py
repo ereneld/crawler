@@ -3,6 +3,7 @@ import re
 import time
 import threading
 from urllib.parse import urlparse
+from crawlerservice import CrawlerJob, get_crawler_status, search_words
 
 # Constants for depth limits
 MIN_DEPTH = 1
@@ -103,13 +104,22 @@ def create_crawler():
         hit_rate = data.get('hit_rate', DEFAULT_HIT_RATE)  # Optional parameter with default
         max_queue_capacity = data.get('max_queue_capacity', DEFAULT_QUEUE_CAPACITY)  # Optional parameter with default
         
-        # TODO: Implement actual crawler job logic here
-        # For now, just return success response with job details
-        
         # Generate crawler_id format: [EpochTimeCreated_ThreadID]
         epoch_time = int(time.time())
         thread_id = threading.get_ident()
         crawler_id = f"{epoch_time}_{thread_id}"
+        
+        # Create and start crawler job
+        crawler = CrawlerJob(
+            crawler_id=crawler_id,
+            origin=origin,
+            max_depth=max_depth,
+            hit_rate=hit_rate,
+            max_queue_capacity=max_queue_capacity
+        )
+        
+        # Start the crawler thread
+        crawler.start()
         
         response_data = {
             "crawler_id": crawler_id,
@@ -152,40 +162,16 @@ def search():
         
         query = query.strip()
         
-        # TODO: Implement actual search logic here
-        # For now, return mock search results with pagination
-        mock_results = [
-            {
-                "word": "example",
-                "relevant_url": "https://example.com/article-1",
-                "origin_url": "https://example.com",
-                "depth": 1,
-                "frequency": 5
-            },
-            {
-                "word": "tutorial",
-                "relevant_url": "https://example.com/docs/guide",
-                "origin_url": "https://example.com",
-                "depth": 2,
-                "frequency": 3
-            },
-            {
-                "word": "python",
-                "relevant_url": "https://blog.example.com/post-1",
-                "origin_url": "https://example.com",
-                "depth": 1,
-                "frequency": 8
-            }
-        ]
+        # Use the search service
+        search_result = search_words(query, page_limit, page_offset)
         
-        # Apply pagination
-        total_results = len(mock_results)
-        paginated_results = mock_results[page_offset:page_offset + page_limit]
+        if "error" in search_result:
+            return jsonify(search_result), 500
         
         response_data = {
             "query": query,
-            "results": paginated_results,
-            "total_results": total_results,
+            "results": search_result["results"],
+            "total_results": search_result["total_results"],
             "page_limit": page_limit,
             "page_offset": page_offset
         }
@@ -199,28 +185,15 @@ def search():
         }), 500
 
 @app.route('/crawler/status/<crawler_id>', methods=['GET'])
-def get_crawler_status(crawler_id):
+def crawler_status(crawler_id):
     """Get crawler status by ID with long polling capability"""
     try:
-        # TODO: Implement actual status lookup from [crawlerId].data file
-        # For now, return mock status data
+        status_data = get_crawler_status(crawler_id)
         
-        mock_status = {
-            "status": "Active",  # Active / Interrupted / Finished
-            "queue": [
-                "https://example.com/page1",
-                "https://example.com/page2",
-                "https://example.com/page3"
-            ],
-            "logs": [
-                "2024-01-01 10:00:00 - Crawler started",
-                "2024-01-01 10:00:01 - Processing origin URL",
-                "2024-01-01 10:00:02 - Found 5 new URLs at depth 1",
-                "2024-01-01 10:00:03 - Processing queue..."
-            ]
-        }
+        if "error" in status_data:
+            return jsonify(status_data), 404
         
-        return jsonify(mock_status), 200
+        return jsonify(status_data), 200
         
     except Exception as e:
         return jsonify({
