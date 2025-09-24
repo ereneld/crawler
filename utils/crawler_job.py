@@ -7,8 +7,8 @@ import urllib.request
 import urllib.parse
 import urllib.error
 import re
-import html.parser
 from collections import Counter
+from .html_parser import parse_html_content
 
 # Storage directories
 DATA_DIR = "data"
@@ -18,37 +18,6 @@ CRAWLER_DIR = os.path.join(DATA_DIR, "crawlers")
 # Ensure directories exist
 os.makedirs(STORAGE_DIR, exist_ok=True)
 os.makedirs(CRAWLER_DIR, exist_ok=True)
-
-class HTMLParser(html.parser.HTMLParser):
-    """Custom HTML parser to extract text and links"""
-    
-    def __init__(self):
-        super().__init__()
-        self.links = []
-        self.text_content = []
-        self.in_script_style = False
-    
-    def handle_starttag(self, tag, attrs):
-        if tag.lower() in ['script', 'style']:
-            self.in_script_style = True
-        elif tag.lower() == 'a':
-            for attr_name, attr_value in attrs:
-                if attr_name.lower() == 'href' and attr_value:
-                    self.links.append(attr_value)
-    
-    def handle_endtag(self, tag):
-        if tag.lower() in ['script', 'style']:
-            self.in_script_style = False
-    
-    def handle_data(self, data):
-        if not self.in_script_style:
-            self.text_content.append(data)
-    
-    def get_text(self):
-        return ' '.join(self.text_content)
-    
-    def get_links(self):
-        return self.links
 
 class CrawlerJob(threading.Thread):
     """Threaded crawler job that handles web crawling with file-based storage using native Python libraries"""
@@ -160,25 +129,12 @@ class CrawlerJob(threading.Thread):
     def _extract_text_and_urls(self, html_content, base_url):
         """Extract text content and URLs from HTML using native Python parser"""
         try:
-            parser = HTMLParser()
-            parser.feed(html_content)
-            
-            # Get text and clean it
-            text = parser.get_text()
+            # Use the HTML parser utility
+            text, urls = parse_html_content(html_content, base_url)
             
             # Clean and count words (2+ characters, alphabetic only)
             words = re.findall(r'\b[a-zA-Z]{2,}\b', text.lower())
             word_freq = Counter(words)
-            
-            # Process links
-            urls = []
-            for link in parser.get_links():
-                # Convert relative URLs to absolute
-                full_url = urllib.parse.urljoin(base_url, link)
-                
-                # Only include HTTP/HTTPS URLs
-                if full_url.startswith(('http://', 'https://')):
-                    urls.append(full_url)
             
             return word_freq, urls
             
@@ -340,63 +296,3 @@ class CrawlerJob(threading.Thread):
             self._log(f"Crawler interrupted: {e}")
         finally:
             self._update_status_file()
-
-def get_crawler_status(crawler_id):
-    """Get crawler status from file"""
-    try:
-        status_file = os.path.join(CRAWLER_DIR, f"{crawler_id}.data")
-        if os.path.exists(status_file):
-            with open(status_file, 'r') as f:
-                return json.load(f)
-        else:
-            return {"error": "Crawler not found"}
-    except Exception as e:
-        return {"error": f"Error reading crawler status: {e}"}
-
-def search_words(query, page_limit=10, page_offset=0):
-    """Search for words in the storage files"""
-    try:
-        results = []
-        query_words = query.lower().split()
-        
-        for word in query_words:
-            if len(word) >= 2:
-                first_letter = word[0].lower()
-                if not first_letter.isalpha():
-                    first_letter = 'other'
-                
-                filename = os.path.join(STORAGE_DIR, f"{first_letter}.data")
-                
-                if os.path.exists(filename):
-                    try:
-                        with open(filename, 'r') as f:
-                            data = json.load(f)
-                        
-                        # Look for exact matches and partial matches
-                        for stored_word, entries in data.items():
-                            if word in stored_word:
-                                for entry in entries:
-                                    results.append({
-                                        "word": stored_word,
-                                        "relevant_url": entry["relevant_url"],
-                                        "origin_url": entry["origin_url"],
-                                        "depth": entry["depth"],
-                                        "frequency": entry["frequency"]
-                                    })
-                    except json.JSONDecodeError:
-                        continue
-        
-        # Sort by frequency (descending)
-        results.sort(key=lambda x: x["frequency"], reverse=True)
-        
-        # Apply pagination
-        total_results = len(results)
-        paginated_results = results[page_offset:page_offset + page_limit]
-        
-        return {
-            "results": paginated_results,
-            "total_results": total_results
-        }
-        
-    except Exception as e:
-        return {"error": f"Search error: {e}"}
