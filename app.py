@@ -19,6 +19,14 @@ DEFAULT_QUEUE_CAPACITY = 10000
 
 app = Flask(__name__)
 
+# Add CORS support for frontend
+@app.after_request
+def after_request(response):
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+    response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
+    return response
+
 def is_valid_url(url):
     """Validate if the provided string is a valid URL"""
     try:
@@ -309,5 +317,9 @@ def method_not_allowed(error):
         "error": "Method not allowed"
     }), 405
 
+@app.route('/<path:path>', methods=['OPTIONS'])
+def handle_options(path):
+    return '', 200
+
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True, host='0.0.0.0', port=3600)

@@ -1,5 +1,5 @@
 // Crawler functionality
-const API_BASE = 'http://localhost:5000';
+const API_BASE = 'http://localhost:3600';
 
 class CrawlerApp {
     constructor() {
