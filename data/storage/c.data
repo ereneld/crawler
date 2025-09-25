@@ -1,0 +1,48 @@
+{
+  "coordination": [
+    {
+      "relevant_url": "https://example.com",
+      "origin_url": "https://example.com",
+      "depth": 0,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://www.iana.org/domains/example",
+      "origin_url": "https://example.com",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "com": [
+    {
+      "relevant_url": "https://www.iana.org/domains/example",
+      "origin_url": "https://example.com",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "configured": [
+    {
+      "relevant_url": "https://www.iana.org/domains/example",
+      "origin_url": "https://example.com",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "contact": [
+    {
+      "relevant_url": "https://www.iana.org/domains/example",
+      "origin_url": "https://example.com",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "coordinate": [
+    {
+      "relevant_url": "https://www.iana.org/domains/example",
+      "origin_url": "https://example.com",
+      "depth": 1,
+      "frequency": 1
+    }
+  ]
+}

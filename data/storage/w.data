@@ -1,0 +1,3664 @@
+{
+  "wikipedia": [
+    {
+      "relevant_url": "https://www.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 0,
+      "frequency": 7
+    },
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 17
+    },
+    {
+      "relevant_url": "https://ja.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://ru.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 13
+    },
+    {
+      "relevant_url": "https://fr.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://es.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 10
+    },
+    {
+      "relevant_url": "https://zh.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://it.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 29
+    },
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 5
+    },
+    {
+      "relevant_url": "https://pt.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://ar.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://fa.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://arz.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 9
+    },
+    {
+      "relevant_url": "https://ceb.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 4
+    },
+    {
+      "relevant_url": "https://sv.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 16
+    },
+    {
+      "relevant_url": "https://uk.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://vi.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 18
+    },
+    {
+      "relevant_url": "https://war.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 18
+    },
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 8
+    },
+    {
+      "relevant_url": "https://sq.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 9
+    },
+    {
+      "relevant_url": "https://ast.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 10
+    },
+    {
+      "relevant_url": "https://az.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://bg.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://zh-min-nan.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 12
+    },
+    {
+      "relevant_url": "https://bn.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://be.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://ca.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://cs.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "winaray": [
+    {
+      "relevant_url": "https://www.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 0,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://fr.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://zh.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://it.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://pt.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://arz.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://ceb.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://sv.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://war.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 7
+    },
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://sq.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://ast.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://bg.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://zh-min-nan.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://ca.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://cs.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "walon": [
+    {
+      "relevant_url": "https://www.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 0,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://fr.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://zh.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://pt.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://arz.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://sv.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://war.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://sq.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://bg.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://ca.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://cs.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "west": [
+    {
+      "relevant_url": "https://www.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 0,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://fr.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://zh.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://pt.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://arz.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://sv.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://war.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://sq.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://bg.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://ca.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://cs.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wolof": [
+    {
+      "relevant_url": "https://www.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 0,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://fr.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://zh.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://it.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://pt.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://arz.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://sv.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://war.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://sq.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://bg.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://ca.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://cs.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wayuunaiki": [
+    {
+      "relevant_url": "https://www.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 0,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://fr.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://zh.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://pt.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://arz.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://sv.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://war.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://sq.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://bg.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://ca.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://cs.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikimedia": [
+    {
+      "relevant_url": "https://www.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 0,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 7
+    },
+    {
+      "relevant_url": "https://ru.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://fr.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 4
+    },
+    {
+      "relevant_url": "https://es.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 8
+    },
+    {
+      "relevant_url": "https://it.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 7
+    },
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 7
+    },
+    {
+      "relevant_url": "https://pt.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 5
+    },
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 5
+    },
+    {
+      "relevant_url": "https://ceb.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 5
+    },
+    {
+      "relevant_url": "https://sv.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://vi.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 6
+    },
+    {
+      "relevant_url": "https://war.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 4
+    },
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://sq.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 11
+    },
+    {
+      "relevant_url": "https://ast.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 5
+    },
+    {
+      "relevant_url": "https://bg.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://zh-min-nan.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 4
+    },
+    {
+      "relevant_url": "https://be.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://ca.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://cs.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 5
+    },
+    {
+      "relevant_url": "https://cy.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 7
+    }
+  ],
+  "work": [
+    {
+      "relevant_url": "https://www.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "with": [
+    {
+      "relevant_url": "https://www.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 0,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://www.iana.org/domains/example",
+      "origin_url": "https://example.com",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikivoyage": [
+    {
+      "relevant_url": "https://www.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 0,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://fr.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://it.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 4
+    },
+    {
+      "relevant_url": "https://pt.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://sv.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://vi.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://war.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://zh-min-nan.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://ca.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wiktionary": [
+    {
+      "relevant_url": "https://www.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 0,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://ceb.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://sv.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://vi.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://war.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://zh-min-nan.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wikibooks": [
+    {
+      "relevant_url": "https://www.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 0,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://it.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://ceb.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://sv.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://vi.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://war.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://zh-min-nan.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikinews": [
+    {
+      "relevant_url": "https://www.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 0,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://fr.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://ceb.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://sv.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://vi.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://war.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://zh-min-nan.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wikidata": [
+    {
+      "relevant_url": "https://www.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 0,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://fr.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://es.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 4
+    },
+    {
+      "relevant_url": "https://it.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 4
+    },
+    {
+      "relevant_url": "https://pt.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://arz.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://ceb.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://sv.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://vi.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://war.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://sq.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://ast.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 6
+    },
+    {
+      "relevant_url": "https://zh-min-nan.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://ca.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://cs.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wikiversity": [
+    {
+      "relevant_url": "https://www.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 0,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://ceb.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://sv.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://vi.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://war.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://zh-min-nan.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://ca.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikiquote": [
+    {
+      "relevant_url": "https://www.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 0,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://fr.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://es.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://it.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 4
+    },
+    {
+      "relevant_url": "https://pt.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://ceb.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://sv.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://vi.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://war.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://sq.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://ast.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://zh-min-nan.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wiki": [
+    {
+      "relevant_url": "https://www.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 0,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://fr.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://es.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://it.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 4
+    },
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://pt.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 5
+    },
+    {
+      "relevant_url": "https://arz.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://ceb.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://sv.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://vi.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 4
+    },
+    {
+      "relevant_url": "https://war.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://sq.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://ast.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://zh-min-nan.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 4
+    },
+    {
+      "relevant_url": "https://ca.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://cs.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 4
+    }
+  ],
+  "wikisource": [
+    {
+      "relevant_url": "https://www.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 0,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://fr.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://es.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 4
+    },
+    {
+      "relevant_url": "https://it.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 5
+    },
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://pt.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://ceb.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://sv.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://vi.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://war.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://sq.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://ast.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://bg.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://zh-min-nan.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://ca.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikispecies": [
+    {
+      "relevant_url": "https://www.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 0,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://fr.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://es.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://it.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://pt.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://arz.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://ceb.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://sv.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://vi.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://war.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://sq.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://ast.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://zh-min-nan.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wikifunctions": [
+    {
+      "relevant_url": "https://www.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 0,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://fr.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://zh.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://it.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://pt.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://ceb.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://sv.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://vi.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://war.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://sq.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://ast.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://bg.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://zh-min-nan.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://be.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://ca.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://cy.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "what": [
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "welcome": [
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "writer": [
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "white": [
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://es.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "was": [
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 10
+    },
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    }
+  ],
+  "were": [
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 4
+    }
+  ],
+  "well": [
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://cy.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "won": [
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wallachia": [
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "will": [
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "water": [
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "winch": [
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "weight": [
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wins": [
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "war": [
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    },
+    {
+      "relevant_url": "https://ja.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://war.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "who": [
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wurtzbach": [
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "which": [
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "when": [
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "washington": [
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "way": [
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "written": [
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wikipedias": [
+    {
+      "relevant_url": "https://en.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://sv.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    }
+  ],
+  "world": [
+    {
+      "relevant_url": "https://ru.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://cy.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "werkzeuge": [
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    }
+  ],
+  "willkommen": [
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wissenschaft": [
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wettbewerb": [
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "werden": [
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    }
+  ],
+  "worauf": [
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wie": [
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "welt": [
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    }
+  ],
+  "wird": [
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 5
+    }
+  ],
+  "weitere": [
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 5
+    }
+  ],
+  "westliche": [
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "worden": [
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wurde": [
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wurden": [
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wider": [
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "werke": [
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wissa": [
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wassef": [
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wissensdatenbank": [
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "weitergabe": [
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "website": [
+    {
+      "relevant_url": "https://de.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikilivres": [
+    {
+      "relevant_url": "https://fr.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wiktionnaire": [
+    {
+      "relevant_url": "https://fr.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "walt": [
+    {
+      "relevant_url": "https://fr.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikiespecies": [
+    {
+      "relevant_url": "https://es.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://ast.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikilibros": [
+    {
+      "relevant_url": "https://es.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    }
+  ],
+  "wikifunciones": [
+    {
+      "relevant_url": "https://es.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikinoticias": [
+    {
+      "relevant_url": "https://es.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    }
+  ],
+  "wikiversidad": [
+    {
+      "relevant_url": "https://es.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    }
+  ],
+  "wikiviajes": [
+    {
+      "relevant_url": "https://es.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    }
+  ],
+  "wikcionario": [
+    {
+      "relevant_url": "https://es.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    }
+  ],
+  "woodstock": [
+    {
+      "relevant_url": "https://es.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wonder": [
+    {
+      "relevant_url": "https://es.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "witt": [
+    {
+      "relevant_url": "https://es.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://ca.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://cs.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikipediano": [
+    {
+      "relevant_url": "https://it.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wikinotizie": [
+    {
+      "relevant_url": "https://it.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 4
+    }
+  ],
+  "wikizionario": [
+    {
+      "relevant_url": "https://it.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wikiquette": [
+    {
+      "relevant_url": "https://it.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wolna": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 4
+    }
+  ],
+  "wikipedii": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 9
+    },
+    {
+      "relevant_url": "https://cs.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 8
+    }
+  ],
+  "wersji": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wersja": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wikidane": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wikifunkcje": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wikicytaty": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wikidanych": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wolnej": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "witaj": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wiesz": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wojnie": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wydarzenia": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wojna": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wyniku": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "weiss": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "warszawskiej": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wydawnictwa": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wajdy": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wybory": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wyborach": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "weichert": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    }
+  ],
+  "wojny": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wyroku": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wroniec": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "widlasty": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wilgotnej": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wykorzystywane": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wymiotny": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wszystkie": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wolne": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikiwersytet": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikipedystami": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wczoraj": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "warunkach": [
+    {
+      "relevant_url": "https://pl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wikilivros": [
+    {
+      "relevant_url": "https://pt.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wikiversidade": [
+    {
+      "relevant_url": "https://pt.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wikitech": [
+    {
+      "relevant_url": "https://pt.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://sq.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikispore": [
+    {
+      "relevant_url": "https://pt.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wijzigingen": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "willekeurige": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "weergeven": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wikifuncties": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wikinieuws": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wikiwoordenboek": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "welkom": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "week": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wetenschap": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "waarvan": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "werd": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wist": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "woord": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wielerwedstrijden": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "winnen": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "weissmuller": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "waterpolo": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wapen": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wapenspreuk": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wofford": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://cs.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "weten": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "waardoor": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wordt": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "warren": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikisoftware": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "woordenboek": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wezens": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wereldwijde": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "winstoogmerk": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "weergave": [
+    {
+      "relevant_url": "https://nl.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikipedya": [
+    {
+      "relevant_url": "https://ceb.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 9
+    }
+  ],
+  "walay": [
+    {
+      "relevant_url": "https://ceb.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wittstock": [
+    {
+      "relevant_url": "https://sv.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wallenberg": [
+    {
+      "relevant_url": "https://sv.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikimania": [
+    {
+      "relevant_url": "https://sv.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://sq.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikimedias": [
+    {
+      "relevant_url": "https://sv.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "windows": [
+    {
+      "relevant_url": "https://vi.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    }
+  ],
+  "we": [
+    {
+      "relevant_url": "https://vi.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://www.iana.org/domains/example",
+      "origin_url": "https://example.com",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "web": [
+    {
+      "relevant_url": "https://vi.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    },
+    {
+      "relevant_url": "https://www.iana.org/domains/example",
+      "origin_url": "https://example.com",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "waray": [
+    {
+      "relevant_url": "https://war.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "waraynon": [
+    {
+      "relevant_url": "https://war.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wiksyunaryo": [
+    {
+      "relevant_url": "https://war.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "welsh": [
+    {
+      "relevant_url": "https://war.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://cy.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 4
+    }
+  ],
+  "western": [
+    {
+      "relevant_url": "https://war.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://cy.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "walloon": [
+    {
+      "relevant_url": "https://war.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wysigings": [
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wysig": [
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wys": [
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 4
+    }
+  ],
+  "weergawe": [
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikispesies": [
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikiboeke": [
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikiaanhaling": [
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wat": [
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 8
+    }
+  ],
+  "word": [
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 5
+    }
+  ],
+  "weens": [
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "walachye": [
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "warskouverdrag": [
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "westerse": [
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wen": [
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://cy.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wes": [
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "watter": [
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "werk": [
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "woestyne": [
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wapens": [
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wetenskap": [
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wiskunde": [
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "weergawes": [
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 6
+    }
+  ],
+  "wikiwoordeboek": [
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "woordeboek": [
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wees": [
+    {
+      "relevant_url": "https://af.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "winners": [
+    {
+      "relevant_url": "https://sq.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikilajme": [
+    {
+      "relevant_url": "https://sq.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikicitate": [
+    {
+      "relevant_url": "https://sq.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikiversiteti": [
+    {
+      "relevant_url": "https://sq.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikiburime": [
+    {
+      "relevant_url": "https://sq.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikilibra": [
+    {
+      "relevant_url": "https://sq.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikispecie": [
+    {
+      "relevant_url": "https://sq.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikistats": [
+    {
+      "relevant_url": "https://sq.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikillibros": [
+    {
+      "relevant_url": "https://ast.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wikicites": [
+    {
+      "relevant_url": "https://ast.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikcionariu": [
+    {
+      "relevant_url": "https://ast.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wikipedies": [
+    {
+      "relevant_url": "https://ast.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    }
+  ],
+  "wikis": [
+    {
+      "relevant_url": "https://ast.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikt": [
+    {
+      "relevant_url": "https://ast.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikinoticies": [
+    {
+      "relevant_url": "https://ast.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikiviaxes": [
+    {
+      "relevant_url": "https://ast.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wikipedie": [
+    {
+      "relevant_url": "https://cs.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 5
+    }
+  ],
+  "wikizdroje": [
+    {
+      "relevant_url": "https://cs.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    }
+  ],
+  "wikidruhy": [
+    {
+      "relevant_url": "https://cs.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wikiknihy": [
+    {
+      "relevant_url": "https://cs.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wikifunkce": [
+    {
+      "relevant_url": "https://cs.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wikiverzita": [
+    {
+      "relevant_url": "https://cs.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wikicesty": [
+    {
+      "relevant_url": "https://cs.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wikidat": [
+    {
+      "relevant_url": "https://cs.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wicipedia": [
+    {
+      "relevant_url": "https://cy.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 11
+    }
+  ],
+  "wici": [
+    {
+      "relevant_url": "https://cy.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wicimedia": [
+    {
+      "relevant_url": "https://cy.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wicidestun": [
+    {
+      "relevant_url": "https://cy.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    }
+  ],
+  "wicifywyd": [
+    {
+      "relevant_url": "https://cy.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wicilyfrau": [
+    {
+      "relevant_url": "https://cy.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wicidata": [
+    {
+      "relevant_url": "https://cy.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    }
+  ],
+  "wiciddyfynnu": [
+    {
+      "relevant_url": "https://cy.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wiciadur": [
+    {
+      "relevant_url": "https://cy.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 2
+    }
+  ],
+  "wyddoch": [
+    {
+      "relevant_url": "https://cy.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wella": [
+    {
+      "relevant_url": "https://cy.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wales": [
+    {
+      "relevant_url": "https://cy.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    }
+  ],
+  "williams": [
+    {
+      "relevant_url": "https://cy.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 3
+    }
+  ],
+  "wrth": [
+    {
+      "relevant_url": "https://cy.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "wicibrosiectau": [
+    {
+      "relevant_url": "https://cy.wikipedia.org/",
+      "origin_url": "https://www.wikipedia.org/",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "without": [
+    {
+      "relevant_url": "https://example.com",
+      "origin_url": "https://example.com",
+      "depth": 0,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://www.iana.org/domains/example",
+      "origin_url": "https://example.com",
+      "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "while": [
+    {
+      "relevant_url": "https://www.iana.org/domains/example",
+      "origin_url": "https://example.com",
+      "depth": 1,
+      "frequency": 1
+    }
+  ]
+}

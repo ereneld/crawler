@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from urllib.parse import urlparse
-from services.crawler_service import create_crawler, get_crawler_status, list_all_crawlers, stop_crawler
+from services.crawler_service import create_crawler, get_crawler_status, list_all_crawlers, stop_crawler, get_visited_urls_stats
 from services.search_service import search_words, get_search_statistics, get_word_suggestions
 
 # Constants for depth limits
@@ -243,6 +243,23 @@ def stop_crawler_endpoint(crawler_id):
             return jsonify(result), 500
         
         return jsonify(result), 200
+        
+    except Exception as e:
+        return jsonify({
+            "error": "Internal server error",
+            "details": str(e)
+        }), 500
+
+@app.route('/crawler/visited-urls', methods=['GET'])
+def visited_urls_statistics():
+    """Get statistics about visited URLs"""
+    try:
+        stats = get_visited_urls_stats()
+        
+        if "error" in stats:
+            return jsonify(stats), 500
+        
+        return jsonify(stats), 200
         
     except Exception as e:
         return jsonify({

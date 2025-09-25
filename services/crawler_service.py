@@ -190,3 +190,96 @@ def list_all_crawlers():
 def stop_crawler(crawler_id):
     """Main function to stop a crawler"""
     return crawler_service.stop_crawler(crawler_id)
+
+def get_visited_urls_stats():
+    """Get statistics about visited URLs"""
+    try:
+        visited_file = os.path.join(DATA_DIR, "visited_urls.data")
+        
+        if not os.path.exists(visited_file):
+            return {
+                "total_urls": 0,
+                "crawlers": {},
+                "recent_visits": []
+            }
+        
+        stats = {
+            "total_urls": 0,
+            "crawlers": {},
+            "recent_visits": [],
+            "domains": {},
+            "first_visit": None,
+            "last_visit": None
+        }
+        
+        with open(visited_file, 'r') as f:
+            for line in f:
+                line = line.strip()
+                if line:
+                    try:
+                        # Try to parse as JSON (new format)
+                        import json
+                        from urllib.parse import urlparse
+                        
+                        url_data = json.loads(line)
+                        url = url_data.get('url', '')
+                        crawler_id = url_data.get('crawler_id', 'unknown')
+                        visited_at = url_data.get('visited_at', '')
+                        timestamp = url_data.get('timestamp', 0)
+                        
+                        if url:
+                            stats["total_urls"] += 1
+                            
+                            # Track by crawler
+                            if crawler_id not in stats["crawlers"]:
+                                stats["crawlers"][crawler_id] = {
+                                    "count": 0,
+                                    "first_visit": visited_at,
+                                    "last_visit": visited_at
+                                }
+                            stats["crawlers"][crawler_id]["count"] += 1
+                            stats["crawlers"][crawler_id]["last_visit"] = visited_at
+                            
+                            # Track by domain
+                            try:
+                                domain = urlparse(url).netloc
+                                if domain:
+                                    stats["domains"][domain] = stats["domains"].get(domain, 0) + 1
+                            except:
+                                pass
+                            
+                            # Track recent visits (last 10)
+                            if len(stats["recent_visits"]) < 10:
+                                stats["recent_visits"].append({
+                                    "url": url,
+                                    "crawler_id": crawler_id,
+                                    "visited_at": visited_at
+                                })
+                            
+                            # Track first/last visit times
+                            if not stats["first_visit"] or timestamp < stats.get("first_timestamp", float('inf')):
+                                stats["first_visit"] = visited_at
+                                stats["first_timestamp"] = timestamp
+                            if not stats["last_visit"] or timestamp > stats.get("last_timestamp", 0):
+                                stats["last_visit"] = visited_at
+                                stats["last_timestamp"] = timestamp
+                                
+                    except json.JSONDecodeError:
+                        # Old format (just URL)
+                        if line.startswith(('http://', 'https://')):
+                            stats["total_urls"] += 1
+                            try:
+                                domain = urlparse(line).netloc
+                                if domain:
+                                    stats["domains"][domain] = stats["domains"].get(domain, 0) + 1
+                            except:
+                                pass
+        
+        # Clean up temporary fields
+        stats.pop("first_timestamp", None)
+        stats.pop("last_timestamp", None)
+        
+        return stats
+        
+    except Exception as e:
+        return {"error": f"Error analyzing visited URLs: {e}"}

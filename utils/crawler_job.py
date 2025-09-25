@@ -115,9 +115,20 @@ class CrawlerJob(threading.Thread):
             if os.path.exists(self.visited_file):
                 with open(self.visited_file, 'r') as f:
                     for line in f:
-                        url = line.strip()
-                        if url:
-                            self.visited_urls.add(url)
+                        line = line.strip()
+                        if line:
+                            # Handle both old format (just URL) and new format (JSON)
+                            try:
+                                # Try to parse as JSON (new format)
+                                import json
+                                url_data = json.loads(line)
+                                url = url_data.get('url', '')
+                                if url:
+                                    self.visited_urls.add(url)
+                            except json.JSONDecodeError:
+                                # Fall back to old format (just the URL)
+                                if line.startswith(('http://', 'https://')):
+                                    self.visited_urls.add(line)
                 self._log(f"Loaded {len(self.visited_urls)} previously visited URLs")
             else:
                 self._log("No previous visited URLs file found, starting fresh")
@@ -125,10 +136,23 @@ class CrawlerJob(threading.Thread):
             self._log(f"Error loading visited URLs: {e}")
     
     def _save_visited_url(self, url):
-        """Save a visited URL to the global file"""
+        """Save a visited URL to the global file with metadata"""
         try:
+            import json
+            from datetime import datetime
+            
+            # Create URL entry with metadata
+            url_entry = {
+                "url": url,
+                "crawler_id": self.crawler_id,
+                "visited_at": datetime.now().isoformat(),
+                "timestamp": time.time()
+            }
+            
+            # Append as JSON line
             with open(self.visited_file, 'a') as f:
-                f.write(f"{url}\n")
+                f.write(json.dumps(url_entry) + '\n')
+            
             self.visited_urls.add(url)
         except Exception as e:
             self._log(f"Error saving visited URL: {e}")
