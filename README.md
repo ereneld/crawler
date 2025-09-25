@@ -1,4 +1,4 @@
-# 🕷️ Brightwave Web Crawler
+# 🕷️ Web Crawler
 
 A comprehensive web crawling platform built with Python Flask, featuring real-time monitoring, intelligent search, and a responsive web interface.
 
@@ -301,7 +301,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- Built for Brightwave technical assessment
+- Built for technical assessment
 - Uses native Python libraries for core functionality
 - Responsive design inspired by modern web standards
 - Test coverage ensures reliability and maintainability
