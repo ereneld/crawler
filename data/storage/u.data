@@ -109,6 +109,12 @@
       "origin_url": "https://www.wikipedia.org/",
       "depth": 1,
       "frequency": 8
+    },
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
     }
   ],
   "use": [
@@ -389,6 +395,12 @@
       "origin_url": "https://www.wikipedia.org/",
       "depth": 1,
       "frequency": 1
+    },
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 2
     }
   ],
   "using": [
@@ -1483,6 +1495,12 @@
       "origin_url": "https://www.wikipedia.org/",
       "depth": 1,
       "frequency": 1
+    },
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 2
     }
   ],
   "urbain": [
@@ -1736,6 +1754,30 @@
       "relevant_url": "https://cy.wikipedia.org/",
       "origin_url": "https://www.wikipedia.org/",
       "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "uncatastrophied": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "unhappy": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "unsweetly": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
       "frequency": 1
     }
   ]

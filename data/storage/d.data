@@ -931,6 +931,12 @@
       "origin_url": "https://www.wikipedia.org/",
       "depth": 1,
       "frequency": 2
+    },
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
     }
   ],
   "details": [
@@ -969,6 +975,12 @@
       "origin_url": "https://www.wikipedia.org/",
       "depth": 1,
       "frequency": 1
+    },
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 2
     }
   ],
   "disaster": [
@@ -1060,6 +1072,12 @@
       "relevant_url": "https://cy.wikipedia.org/",
       "origin_url": "https://www.wikipedia.org/",
       "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
       "frequency": 1
     }
   ],
@@ -2731,6 +2749,12 @@
       "origin_url": "https://example.com",
       "depth": 1,
       "frequency": 1
+    },
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 2
     }
   ],
   "dla": [
@@ -4550,6 +4574,102 @@
       "relevant_url": "https://www.iana.org/domains/example",
       "origin_url": "https://example.com",
       "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "dick": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "deck": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "deadly": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "dilapidated": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "darkness": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "disguisement": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "desperate": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "darker": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "dwelling": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "death": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "delicious": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "dream": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
       "frequency": 1
     }
   ]

@@ -914,5 +914,21 @@
       "depth": 1,
       "frequency": 1
     }
+  ],
+  "job": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "jealously": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
   ]
 }

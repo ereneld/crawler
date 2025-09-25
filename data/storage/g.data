@@ -1333,6 +1333,12 @@
       "origin_url": "https://www.wikipedia.org/",
       "depth": 1,
       "frequency": 1
+    },
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
     }
   ],
   "graphiques": [
@@ -3426,6 +3432,46 @@
       "relevant_url": "https://www.iana.org/domains/example",
       "origin_url": "https://example.com",
       "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "gait": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "given": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "gladness": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "grief": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 2
+    }
+  ],
+  "grove": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
       "frequency": 1
     }
   ]

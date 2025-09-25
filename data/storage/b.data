@@ -1531,6 +1531,12 @@
       "origin_url": "https://example.com",
       "depth": 1,
       "frequency": 1
+    },
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 6
     }
   ],
   "base": [
@@ -1663,6 +1669,12 @@
       "origin_url": "https://example.com",
       "depth": 1,
       "frequency": 1
+    },
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 4
     }
   ],
   "bags": [
@@ -1715,6 +1727,12 @@
       "origin_url": "https://example.com",
       "depth": 1,
       "frequency": 1
+    },
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 5
     }
   ],
   "became": [
@@ -1899,6 +1917,12 @@
       "origin_url": "https://www.wikipedia.org/",
       "depth": 1,
       "frequency": 1
+    },
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
     }
   ],
   "been": [
@@ -1906,6 +1930,12 @@
       "relevant_url": "https://en.wikipedia.org/",
       "origin_url": "https://www.wikipedia.org/",
       "depth": 1,
+      "frequency": 1
+    },
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
       "frequency": 1
     }
   ],
@@ -2391,6 +2421,12 @@
       "origin_url": "https://www.wikipedia.org/",
       "depth": 1,
       "frequency": 3
+    },
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
     }
   ],
   "bob": [
@@ -4628,6 +4664,142 @@
       "relevant_url": "https://cy.wikipedia.org/",
       "origin_url": "https://www.wikipedia.org/",
       "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "begrimed": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "blistered": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "blacksmith": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 6
+    }
+  ],
+  "being": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "bowsmen": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "boat": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 2
+    }
+  ],
+  "bowing": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "broken": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "back": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "beating": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 2
+    }
+  ],
+  "belated": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "bitter": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "between": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "barn": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "blithe": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "burglar": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 2
+    }
+  ],
+  "bottle": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
       "frequency": 1
     }
   ]

@@ -783,6 +783,12 @@
       "origin_url": "https://www.wikipedia.org/",
       "depth": 1,
       "frequency": 1
+    },
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
     }
   ],
   "voyez": [
@@ -2514,6 +2520,30 @@
       "relevant_url": "https://cy.wikipedia.org/",
       "origin_url": "https://www.wikipedia.org/",
       "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "various": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "vigorous": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
+    }
+  ],
+  "venerable": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
       "frequency": 1
     }
   ]

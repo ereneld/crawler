@@ -117,18 +117,27 @@ class CrawlerJob(threading.Thread):
                     for line in f:
                         line = line.strip()
                         if line:
-                            # Handle both old format (just URL) and new format (JSON)
-                            try:
-                                # Try to parse as JSON (new format)
-                                import json
-                                url_data = json.loads(line)
-                                url = url_data.get('url', '')
-                                if url:
+                            # Handle multiple formats: space-separated, JSON, or plain URL
+                            parts = line.split()
+                            
+                            if len(parts) >= 3:
+                                # New space-separated format: URL CRAWLER_ID DATETIME
+                                url = parts[0]
+                                if url.startswith(('http://', 'https://')):
                                     self.visited_urls.add(url)
-                            except json.JSONDecodeError:
-                                # Fall back to old format (just the URL)
-                                if line.startswith(('http://', 'https://')):
-                                    self.visited_urls.add(line)
+                            elif line.startswith('{'):
+                                # JSON format (temporary transition format)
+                                try:
+                                    import json
+                                    url_data = json.loads(line)
+                                    url = url_data.get('url', '')
+                                    if url:
+                                        self.visited_urls.add(url)
+                                except json.JSONDecodeError:
+                                    pass
+                            elif line.startswith(('http://', 'https://')):
+                                # Old format (just the URL)
+                                self.visited_urls.add(line)
                 self._log(f"Loaded {len(self.visited_urls)} previously visited URLs")
             else:
                 self._log("No previous visited URLs file found, starting fresh")
@@ -136,22 +145,16 @@ class CrawlerJob(threading.Thread):
             self._log(f"Error loading visited URLs: {e}")
     
     def _save_visited_url(self, url):
-        """Save a visited URL to the global file with metadata"""
+        """Save a visited URL to the global file with space-separated metadata"""
         try:
-            import json
             from datetime import datetime
             
-            # Create URL entry with metadata
-            url_entry = {
-                "url": url,
-                "crawler_id": self.crawler_id,
-                "visited_at": datetime.now().isoformat(),
-                "timestamp": time.time()
-            }
+            # Create space-separated entry: URL CRAWLER_ID DATETIME
+            visited_at = datetime.now().isoformat()
             
-            # Append as JSON line
+            # Append as space-separated line
             with open(self.visited_file, 'a') as f:
-                f.write(json.dumps(url_entry) + '\n')
+                f.write(f"{url} {self.crawler_id} {visited_at}\n")
             
             self.visited_urls.add(url)
         except Exception as e:

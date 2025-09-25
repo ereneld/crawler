@@ -691,6 +691,12 @@
       "origin_url": "https://www.wikipedia.org/",
       "depth": 1,
       "frequency": 1
+    },
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
+      "frequency": 1
     }
   ],
   "kingdom": [
@@ -3318,6 +3324,14 @@
       "relevant_url": "https://cy.wikipedia.org/",
       "origin_url": "https://www.wikipedia.org/",
       "depth": 1,
+      "frequency": 1
+    }
+  ],
+  "killing": [
+    {
+      "relevant_url": "https://httpbin.org/html",
+      "origin_url": "https://httpbin.org/html",
+      "depth": 0,
       "frequency": 1
     }
   ]
