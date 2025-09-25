@@ -18,39 +18,30 @@
         </nav>
     </header>
 
-    <main class="main">
-        <!-- Crawler ID Input Section -->
-        <div class="form-container">
-            <h1>📊 Crawler Status</h1>
-            <p style="margin-bottom: 2rem; color: #5f6368;">
-                Enter a crawler ID to view its status and logs in real-time.
-            </p>
-
-            <form id="statusForm">
-                <div class="form-group">
-                    <label for="crawlerId">Crawler ID</label>
-                    <input 
-                        type="text" 
-                        id="crawlerId" 
-                        class="form-input"
-                        placeholder="Enter crawler ID (e.g., 1727123456_78901234)"
-                        required
-                    >
-                    <small style="color: #5f6368;">The unique ID returned when you created the crawler</small>
-                </div>
-
-                <div style="text-align: center;">
-                    <button type="submit" class="btn btn-primary">
-                        📊 View Status
-                    </button>
-                </div>
+    <!-- Compact Crawler ID Input Bar -->
+    <div class="crawler-input-bar">
+        <div class="crawler-input-container">
+            <form id="statusForm" class="crawler-input-form">
+                <label for="crawlerId" class="input-label">🕷️ Crawler ID:</label>
+                <input 
+                    type="text" 
+                    id="crawlerId" 
+                    class="crawler-input"
+                    placeholder="Enter crawler ID (e.g., 1727123456_78901234)"
+                    required
+                >
+                <button type="submit" class="btn btn-primary crawler-btn">
+                    📊 View Status
+                </button>
             </form>
-
             <div class="error" id="errorMessage" style="display: none;"></div>
             <div class="loading" id="loadingSpinner" style="display: none;">
-                🔄 Loading crawler status...
+                🔄 Loading...
             </div>
         </div>
+    </div>
+
+    <main class="main">
 
         <!-- Status Display Section -->
         <div class="status-container" id="statusContainer" style="display: none;">
@@ -59,6 +50,8 @@
                 <div>
                     <span class="status-badge" id="statusBadge">Unknown</span>
                     <button class="btn" id="refreshBtn" style="margin-left: 1rem;">🔄 Refresh</button>
+                    <button class="btn" id="pauseBtn" style="margin-left: 0.5rem; display: none;">⏸️ Pause</button>
+                    <button class="btn" id="resumeBtn" style="margin-left: 0.5rem; display: none;">▶️ Resume</button>
                     <button class="btn" id="stopBtn" style="margin-left: 0.5rem; display: none;">🛑 Stop</button>
                 </div>
             </div>
@@ -95,7 +88,12 @@
 
             <!-- Current Queue -->
             <div style="margin-bottom: 2rem;">
-                <h3>📋 Current Queue</h3>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                    <h3>📋 Current Queue</h3>
+                    <button id="downloadQueueBtn" class="btn btn-small" disabled title="Download queue as text file">
+                        💾 Download Queue
+                    </button>
+                </div>
                 <div id="queueContainer" style="background: #f8f9fa; border-radius: 4px; padding: 1rem; min-height: 60px;">
                     <div class="loading">Loading queue...</div>
                 </div>
@@ -103,7 +101,12 @@
 
             <!-- Logs Section -->
             <div>
-                <h3>📜 Crawler Logs</h3>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                    <h3>📜 Crawler Logs</h3>
+                    <button id="downloadLogsBtn" class="btn btn-small" disabled title="Download logs as text file">
+                        💾 Download Logs
+                    </button>
+                </div>
                 <div class="logs-container" id="logsContainer">
                     Loading logs...
                 </div>

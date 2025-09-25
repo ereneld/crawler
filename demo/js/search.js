@@ -97,40 +97,51 @@ class SearchApp {
     }
 
     async performLuckySearch() {
-        const query = document.getElementById('searchInput').value.trim();
-        
-        if (!query) {
-            this.showError('Please enter a search query');
-            return;
-        }
-
         this.showLoading(true);
         this.hideError();
 
         try {
-            const response = await fetch(
-                `${API_BASE}/search?query=${encodeURIComponent(query)}&pageLimit=1&pageOffset=0&sortBy=relevance`
+            // First, get a random word from the database
+            const randomResponse = await fetch(`${API_BASE}/search/random`);
+            
+            if (!randomResponse.ok) {
+                throw new Error(`HTTP ${randomResponse.status}: ${randomResponse.statusText}`);
+            }
+
+            const randomData = await randomResponse.json();
+            
+            if (randomData.error) {
+                throw new Error(randomData.error);
+            }
+
+            const randomWord = randomData.word;
+            
+            // Update the search input to show the random word
+            document.getElementById('searchInput').value = randomWord;
+            
+            // Now search for that random word
+            const searchResponse = await fetch(
+                `${API_BASE}/search?query=${encodeURIComponent(randomWord)}&pageLimit=${this.pageLimit}&pageOffset=0&sortBy=relevance`
             );
 
-            if (!response.ok) {
-                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            if (!searchResponse.ok) {
+                throw new Error(`HTTP ${searchResponse.status}: ${searchResponse.statusText}`);
             }
 
-            const data = await response.json();
+            const searchData = await searchResponse.json();
             
-            if (data.error) {
-                throw new Error(data.error);
+            if (searchData.error) {
+                throw new Error(searchData.error);
             }
 
-            if (data.results && data.results.length > 0) {
-                // Open the first result in a new tab
-                window.open(data.results[0].relevant_url, '_blank');
-            } else {
-                this.showError('No results found for your search');
-            }
+            // Display the search results for the random word
+            this.currentQuery = randomWord;
+            this.currentPage = 0;
+            this.displayResults(searchData);
+            
         } catch (error) {
             console.error('Lucky search error:', error);
-            this.showError(`Lucky search failed: ${error.message}`);
+            this.showError(`I'm Feeling Lucky failed: ${error.message}`);
         } finally {
             this.showLoading(false);
         }

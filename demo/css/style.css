@@ -62,6 +62,96 @@ body {
     color: white;
 }
 
+/* Compact Crawler Input Bar */
+.crawler-input-bar {
+    background: #f8f9fa;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 1rem 0;
+}
+
+.crawler-input-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.crawler-input-form {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.input-label {
+    font-weight: 600;
+    color: #333;
+    white-space: nowrap;
+}
+
+.crawler-input {
+    flex: 1;
+    min-width: 300px;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    background: #fff;
+}
+
+.crawler-input:focus {
+    outline: none;
+    border-color: #4285f4;
+    box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.2);
+}
+
+.crawler-btn {
+    white-space: nowrap;
+    padding: 0.75rem 1.5rem;
+}
+
+/* Error and loading messages in crawler bar */
+.crawler-input-container .error,
+.crawler-input-container .loading {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Statistics display styles */
+.stats-display {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.stats-display .stat-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.stats-display .stat-label {
+    font-weight: 600;
+    color: #333;
+    white-space: nowrap;
+}
+
+.stats-display .stat-value {
+    font-weight: 700;
+    color: #1a73e8;
+    background: #e8f0fe;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    min-width: 2rem;
+    text-align: center;
+}
+
+.stats-display .stat-actions {
+    margin-left: auto;
+    display: flex;
+    gap: 0.5rem;
+}
+
 /* Main content */
 .main {
     flex: 1;
@@ -200,6 +290,38 @@ body {
     gap: 1rem;
 }
 
+/* Compact form styles */
+.compact-form {
+    max-width: 900px;
+    padding: 1.5rem;
+}
+
+.slim-form .form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.slim-form .form-group {
+    margin-bottom: 0;
+    flex: 1;
+}
+
+.slim-form .flex-1 {
+    flex: 1;
+}
+
+.slim-form .flex-2 {
+    flex: 2;
+}
+
+.slim-form .form-actions {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e1e1e5;
+}
+
 /* Results styles */
 .results-container {
     margin-top: 2rem;
@@ -261,6 +383,16 @@ body {
 .status-active {
     background: #e8f5e8;
     color: #137333;
+}
+
+.status-paused {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status-stopped {
+    background: #f8d7da;
+    color: #721c24;
 }
 
 .status-finished {
@@ -338,6 +470,55 @@ body {
     margin: 1rem 0;
 }
 
+/* Thin Statistics Bar */
+
+.btn-small {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.btn-small:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.btn-secondary {
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+/* Pulse animation for active crawlers */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(40, 167, 69, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(40, 167, 69, 0);
+    }
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     .nav {
@@ -361,8 +542,43 @@ body {
         grid-template-columns: 1fr;
     }
     
+    .slim-form .form-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .compact-form {
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+    
+    .stats-display {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    
+    .stats-display .stat-actions {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+    
     .search-buttons {
         flex-direction: column;
         align-items: center;
+    }
+    
+    .stats-container {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    .stat-item {
+        justify-content: center;
+    }
+    
+    .stat-actions {
+        justify-content: center;
+        width: 100%;
     }
 }

@@ -6,6 +6,8 @@ class StatusApp {
         this.currentCrawlerId = null;
         this.refreshInterval = null;
         this.isLiveMode = false;
+        this.currentQueue = [];
+        this.currentLogs = [];
         this.init();
     }
 
@@ -27,9 +29,29 @@ class StatusApp {
             this.loadCrawlerStatus();
         });
 
+        // Pause button
+        document.getElementById('pauseBtn').addEventListener('click', () => {
+            this.pauseCrawler();
+        });
+
+        // Resume button
+        document.getElementById('resumeBtn').addEventListener('click', () => {
+            this.resumeCrawler();
+        });
+
         // Stop button
         document.getElementById('stopBtn').addEventListener('click', () => {
             this.stopCrawler();
+        });
+
+        // Download queue button
+        document.getElementById('downloadQueueBtn').addEventListener('click', () => {
+            this.downloadQueue();
+        });
+
+        // Download logs button
+        document.getElementById('downloadLogsBtn').addEventListener('click', () => {
+            this.downloadLogs();
         });
     }
 
@@ -108,9 +130,19 @@ class StatusApp {
         document.getElementById('queueSize').textContent = data.queue ? data.queue.length : 0;
 
         // Update timestamps
-        const startTime = new Date(data.timestamp * 1000);
-        document.getElementById('startTime').textContent = startTime.toLocaleString();
-        document.getElementById('lastUpdate').textContent = new Date().toLocaleString();
+        if (data.created_at) {
+            const startTime = new Date(data.created_at * 1000);
+            document.getElementById('startTime').textContent = startTime.toLocaleString();
+        } else {
+            document.getElementById('startTime').textContent = 'Unknown';
+        }
+        
+        if (data.updated_at) {
+            const lastUpdate = new Date(data.updated_at * 1000);
+            document.getElementById('lastUpdate').textContent = lastUpdate.toLocaleString();
+        } else {
+            document.getElementById('lastUpdate').textContent = 'Unknown';
+        }
 
         // Update queue
         this.displayQueue(data.queue || []);
@@ -118,9 +150,14 @@ class StatusApp {
         // Update logs
         this.displayLogs(data.logs || []);
 
-        // Show/hide stop button
+        // Show/hide action buttons based on status
+        const pauseBtn = document.getElementById('pauseBtn');
+        const resumeBtn = document.getElementById('resumeBtn');
         const stopBtn = document.getElementById('stopBtn');
-        stopBtn.style.display = data.status === 'Active' ? 'inline-flex' : 'none';
+        
+        pauseBtn.style.display = data.status === 'Active' ? 'inline-flex' : 'none';
+        resumeBtn.style.display = data.status === 'Paused' ? 'inline-flex' : 'none';
+        stopBtn.style.display = (data.status === 'Active' || data.status === 'Paused') ? 'inline-flex' : 'none';
 
         // Show status container
         document.getElementById('statusContainer').style.display = 'block';
@@ -128,6 +165,11 @@ class StatusApp {
 
     displayQueue(queue) {
         const container = document.getElementById('queueContainer');
+        this.currentQueue = queue || [];
+        
+        // Update download button state
+        const downloadBtn = document.getElementById('downloadQueueBtn');
+        downloadBtn.disabled = this.currentQueue.length === 0;
         
         if (queue.length === 0) {
             container.innerHTML = '<div style="color: #5f6368; font-style: italic;">Queue is empty</div>';
@@ -152,6 +194,11 @@ class StatusApp {
 
     displayLogs(logs) {
         const container = document.getElementById('logsContainer');
+        this.currentLogs = logs || [];
+        
+        // Update download button state
+        const downloadBtn = document.getElementById('downloadLogsBtn');
+        downloadBtn.disabled = this.currentLogs.length === 0;
         
         if (logs.length === 0) {
             container.textContent = 'No logs available';
@@ -246,6 +293,68 @@ class StatusApp {
         }
     }
 
+    async pauseCrawler() {
+        if (!this.currentCrawlerId) return;
+
+        if (!confirm('Are you sure you want to pause this crawler?')) {
+            return;
+        }
+
+        try {
+            const response = await fetch(`${API_BASE}/crawler/pause/${this.currentCrawlerId}`, {
+                method: 'POST'
+            });
+
+            const data = await response.json();
+            
+            if (data.error) {
+                throw new Error(data.error);
+            }
+
+            alert(`Crawler pause request: ${data.message}`);
+            
+            // Refresh status after a short delay
+            setTimeout(() => {
+                this.loadCrawlerStatus();
+            }, 1000);
+
+        } catch (error) {
+            console.error('Error pausing crawler:', error);
+            alert(`Failed to pause crawler: ${error.message}`);
+        }
+    }
+
+    async resumeCrawler() {
+        if (!this.currentCrawlerId) return;
+
+        if (!confirm('Are you sure you want to resume this crawler?')) {
+            return;
+        }
+
+        try {
+            const response = await fetch(`${API_BASE}/crawler/resume/${this.currentCrawlerId}`, {
+                method: 'POST'
+            });
+
+            const data = await response.json();
+            
+            if (data.error) {
+                throw new Error(data.error);
+            }
+
+            alert(`Crawler resume request: ${data.message}`);
+            
+            // Refresh status after a short delay
+            setTimeout(() => {
+                this.loadCrawlerStatus();
+            }, 1000);
+
+        } catch (error) {
+            console.error('Error resuming crawler:', error);
+            alert(`Failed to resume crawler: ${error.message}`);
+        }
+    }
+
     async loadAllCrawlers() {
         const container = document.getElementById('allCrawlers');
 
@@ -287,7 +396,8 @@ class StatusApp {
 
         const crawlersHTML = data.crawlers.map(crawler => {
             const statusClass = this.getStatusClass(crawler.status);
-            const timestamp = new Date(crawler.timestamp * 1000).toLocaleString();
+            const createdAt = crawler.created_at ? new Date(crawler.created_at * 1000).toLocaleString() : 'Unknown';
+            const updatedAt = crawler.updated_at ? new Date(crawler.updated_at * 1000).toLocaleString() : 'Unknown';
             
             return `
                 <div class="result-item" style="cursor: pointer;" onclick="statusApp.selectCrawler('${crawler.crawler_id}')">
@@ -298,12 +408,12 @@ class StatusApp {
                                 ${crawler.status}
                             </span>
                         </div>
-                        <small style="color: #5f6368;">${timestamp}</small>
+                        <small style="color: #5f6368;">Created: ${createdAt}</small>
                     </div>
                     <div class="result-meta">
                         <strong>Origin:</strong> ${crawler.origin}<br>
                         <strong>URLs Visited:</strong> ${crawler.visited_count} | 
-                        <strong>Created:</strong> ${timestamp}
+                        <strong>Last Updated:</strong> ${updatedAt}
                     </div>
                 </div>
             `;
@@ -325,10 +435,69 @@ class StatusApp {
         document.getElementById('statusForm').scrollIntoView({ behavior: 'smooth' });
     }
 
+    downloadQueue() {
+        if (!this.currentCrawlerId || this.currentQueue.length === 0) {
+            alert('No queue data available to download');
+            return;
+        }
+
+        try {
+            // Create downloadable content
+            const content = this.currentQueue.join('\n');
+            const filename = `${this.currentCrawlerId}_queue.txt`;
+            
+            this.downloadTextFile(content, filename);
+        } catch (error) {
+            console.error('Error downloading queue:', error);
+            alert('Failed to download queue file');
+        }
+    }
+
+    downloadLogs() {
+        if (!this.currentCrawlerId || this.currentLogs.length === 0) {
+            alert('No log data available to download');
+            return;
+        }
+
+        try {
+            // Create downloadable content (maintain chronological order)
+            const content = this.currentLogs.join('\n');
+            const filename = `${this.currentCrawlerId}_logs.txt`;
+            
+            this.downloadTextFile(content, filename);
+        } catch (error) {
+            console.error('Error downloading logs:', error);
+            alert('Failed to download logs file');
+        }
+    }
+
+    downloadTextFile(content, filename) {
+        // Create blob with content
+        const blob = new Blob([content], { type: 'text/plain' });
+        
+        // Create download link
+        const url = window.URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = filename;
+        
+        // Trigger download
+        document.body.appendChild(link);
+        link.click();
+        
+        // Cleanup
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(url);
+    }
+
     getStatusClass(status) {
         switch (status) {
             case 'Active':
                 return 'status-active';
+            case 'Paused':
+                return 'status-paused';
+            case 'Stopped':
+                return 'status-stopped';
             case 'Finished':
                 return 'status-finished';
             case 'Interrupted':

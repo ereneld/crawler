@@ -35,32 +35,91 @@ class SearchService:
         return list(files_to_search)
     
     def _load_word_data(self, filename):
-        """Load word data from a single alphabet file"""
+        """Load word data from a single alphabet file (space-separated format)"""
         try:
+            word_data = {}
             with open(filename, 'r') as f:
-                return json.load(f)
-        except (json.JSONDecodeError, FileNotFoundError):
+                for line in f:
+                    line = line.strip()
+                    if line:
+                        # Parse space-separated format: word relevant_url origin_url depth frequency
+                        parts = line.split(' ', 4)  # Split into 5 parts max
+                        if len(parts) >= 5:
+                            word, relevant_url, origin_url, depth_str, frequency_str = parts
+                            try:
+                                depth = int(depth_str)
+                                frequency = int(frequency_str)
+                                
+                                if word not in word_data:
+                                    word_data[word] = []
+                                
+                                word_data[word].append({
+                                    "relevant_url": relevant_url,
+                                    "origin_url": origin_url,
+                                    "depth": depth,
+                                    "frequency": frequency
+                                })
+                            except ValueError:
+                                continue  # Skip malformed lines
+            return word_data
+        except FileNotFoundError:
             return {}
     
-    def _calculate_relevance_score(self, word, query_words, entry):
-        """Calculate relevance score for a search result"""
-        score = 0
+    def _find_word_matches(self, query_word, word_data):
+        """
+        Find matching words using optimized key-based lookup with suffix removal
         
-        # Exact match bonus
-        if word in query_words:
-            score += 100
+        Args:
+            query_word (str): The word to search for
+            word_data (dict): Dictionary of words in the current file
+            
+        Returns:
+            set: Set of matching words from word_data
+        """
+        matches = set()
+        query_word_lower = query_word.lower()
         
-        # Partial match bonus
-        for query_word in query_words:
-            if query_word in word:
-                score += 50
-            elif word in query_word:
-                score += 30
+        # For words less than 3 letters, only check exact match
+        if len(query_word_lower) < 3:
+            if query_word_lower in word_data:
+                matches.add(query_word_lower)
+            return matches
         
-        # Frequency weight
-        score += min(entry['frequency'], 50)  # Cap frequency impact
+        # For words 3+ letters, check progressively shorter suffixes
+        # Start with full word (highest score) and work backwards
+        for i in range(len(query_word_lower), 2, -1):  # Down to 3 letters minimum
+            substring = query_word_lower[:i]
+            
+            # Direct key lookup - much faster than iteration
+            if substring in word_data:
+                matches.add(substring)
         
-        # Depth penalty (shallower is better)
+        return matches
+    
+    def _calculate_word_match_score(self, query_word, matched_word, entry):
+        """
+        Calculate relevance score based on word match quality and entry data
+        
+        Args:
+            query_word (str): Original query word
+            matched_word (str): Word that was matched in the database
+            entry (dict): Word entry with frequency, depth, etc.
+            
+        Returns:
+            int: Relevance score
+        """
+        # Base score from frequency
+        score = entry['frequency'] * 10
+        
+        # Full word match gets highest bonus
+        if query_word.lower() == matched_word.lower():
+            score += 1000  # Highest priority for exact matches
+        else:
+            # Partial match bonus based on match length
+            match_ratio = len(matched_word) / len(query_word)
+            score += int(500 * match_ratio)  # Scale bonus by match quality
+        
+        # Depth penalty (shallower pages are better)
         score -= entry['depth'] * 5
         
         return max(score, 0)
@@ -70,31 +129,36 @@ class SearchService:
         results = []
         word_data = self._load_word_data(filename)
         
-        for stored_word, entries in word_data.items():
-            # Check if any query word matches this stored word
-            matches = False
-            for query_word in query_words:
-                if (query_word == stored_word or 
-                    query_word in stored_word or 
-                    stored_word in query_word):
-                    matches = True
-                    break
+        # Extract the letter from filename (e.g., 'a.data' -> 'a')
+        letter = os.path.basename(filename).split('.')[0].lower()
+        
+        # Process each query word against the word data for this letter
+        for query_word in query_words:
+            # Only process query words that start with the current letter
+            if not query_word.startswith(letter):
+                continue
+                
+            # Find matches using optimized key-based lookup
+            matched_words = self._find_word_matches(query_word, word_data)
             
-            if matches:
-                for entry in entries:
-                    relevance_score = self._calculate_relevance_score(
-                        stored_word, query_words, entry
-                    )
-                    
-                    if relevance_score > 0:
-                        results.append({
-                            "word": stored_word,
-                            "relevant_url": entry["relevant_url"],
-                            "origin_url": entry["origin_url"],
-                            "depth": entry["depth"],
-                            "frequency": entry["frequency"],
-                            "relevance_score": relevance_score
-                        })
+            for matched_word in matched_words:
+                if matched_word in word_data:
+                    for entry in word_data[matched_word]:
+                        relevance_score = self._calculate_word_match_score(
+                            query_word, matched_word, entry
+                        )
+                        
+                        if relevance_score > 0:
+                            results.append({
+                                "word": matched_word,
+                                "relevant_url": entry["relevant_url"],
+                                "origin_url": entry["origin_url"],
+                                "depth": entry["depth"],
+                                "frequency": entry["frequency"],
+                                "relevance_score": relevance_score
+                            })
+                else: 
+                    print(f"Error. This should not happen. No matches found for {matched_word} in {filename}")
         
         return results
     
@@ -166,9 +230,7 @@ class SearchService:
             total_results = len(results)
             paginated_results = results[page_offset:page_offset + page_limit]
             
-            # Remove relevance_score from final results (internal use only)
-            for result in paginated_results:
-                result.pop("relevance_score", None)
+            # Keep relevance_score in final results for debugging and user insight
             
             return {
                 "results": paginated_results,
@@ -180,92 +242,38 @@ class SearchService:
         except Exception as e:
             return {"error": f"Search error: {e}"}
     
-    def get_search_stats(self):
-        """Get statistics about the search index"""
+    def get_random_word(self):
+        """Get a random word from the database for 'I'm Feeling Lucky' functionality"""
         try:
-            stats = {
-                "total_files": 0,
-                "total_words": 0,
-                "total_entries": 0,
-                "alphabet_distribution": {}
-            }
+            import random
             
-            # Check each possible alphabet file
-            for letter in 'abcdefghijklmnopqrstuvwxyz':
-                filename = os.path.join(self.storage_dir, f"{letter}.data")
-                if os.path.exists(filename):
-                    stats["total_files"] += 1
-                    word_data = self._load_word_data(filename)
-                    
-                    word_count = len(word_data)
-                    entry_count = sum(len(entries) for entries in word_data.values())
-                    
-                    stats["total_words"] += word_count
-                    stats["total_entries"] += entry_count
-                    stats["alphabet_distribution"][letter] = {
-                        "words": word_count,
-                        "entries": entry_count
-                    }
+            # Get all storage files
+            storage_files = []
+            if os.path.exists(self.storage_dir):
+                for filename in os.listdir(self.storage_dir):
+                    if filename.endswith('.data'):
+                        storage_files.append(os.path.join(self.storage_dir, filename))
             
-            # Check 'other' file for non-alphabetic words
-            other_filename = os.path.join(self.storage_dir, "other.data")
-            if os.path.exists(other_filename):
-                stats["total_files"] += 1
-                word_data = self._load_word_data(other_filename)
-                
-                word_count = len(word_data)
-                entry_count = sum(len(entries) for entries in word_data.values())
-                
-                stats["total_words"] += word_count
-                stats["total_entries"] += entry_count
-                stats["alphabet_distribution"]["other"] = {
-                    "words": word_count,
-                    "entries": entry_count
-                }
+            if not storage_files:
+                return {"error": "No words found in database"}
             
-            return stats
+            # Pick a random storage file
+            random_file = random.choice(storage_files)
+            
+            # Load words from the file and pick a random one
+            word_data = self._load_word_data(random_file)
+            
+            if not word_data:
+                return {"error": "No words found in selected file"}
+            
+            # Get all words and pick a random one
+            words = list(word_data.keys())
+            random_word = random.choice(words)
+            
+            return {"word": random_word}
             
         except Exception as e:
-            return {"error": f"Stats error: {e}"}
-    
-    def suggest_completions(self, partial_word, limit=10):
-        """Suggest word completions for autocomplete functionality"""
-        try:
-            if len(partial_word) < 2:
-                return {"suggestions": []}
-            
-            partial_word = partial_word.lower()
-            first_letter = partial_word[0]
-            
-            if not first_letter.isalpha():
-                first_letter = 'other'
-            
-            filename = os.path.join(self.storage_dir, f"{first_letter}.data")
-            
-            if not os.path.exists(filename):
-                return {"suggestions": []}
-            
-            word_data = self._load_word_data(filename)
-            suggestions = []
-            
-            for word in word_data.keys():
-                if word.startswith(partial_word):
-                    # Calculate suggestion score based on total frequency
-                    total_frequency = sum(entry["frequency"] for entry in word_data[word])
-                    suggestions.append({
-                        "word": word,
-                        "frequency": total_frequency,
-                        "occurrences": len(word_data[word])
-                    })
-            
-            # Sort by frequency and limit results
-            suggestions.sort(key=lambda x: x["frequency"], reverse=True)
-            suggestions = suggestions[:limit]
-            
-            return {"suggestions": suggestions}
-            
-        except Exception as e:
-            return {"error": f"Suggestion error: {e}"}
+            return {"error": f"Random word error: {e}"}
 
 # Global search service instance
 search_service = SearchService()
@@ -274,10 +282,7 @@ def search_words(query, page_limit=10, page_offset=0, sort_by="relevance"):
     """Main search function to be used by the API"""
     return search_service.search(query, page_limit, page_offset, sort_by)
 
-def get_search_statistics():
-    """Get search index statistics"""
-    return search_service.get_search_stats()
 
-def get_word_suggestions(partial_word, limit=10):
-    """Get word completion suggestions"""
-    return search_service.suggest_completions(partial_word, limit)
+def get_random_word():
+    """Get a random word for I'm Feeling Lucky functionality"""
+    return search_service.get_random_word()
