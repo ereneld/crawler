@@ -372,7 +372,7 @@ class CrawlerJob(threading.Thread):
             req = urllib.request.Request(
                 url,
                 headers={
-                    'User-Agent': 'Mozilla/5.0 (compatible; BrightwaveCrawler/1.0)'
+                    'User-Agent': 'Mozilla/5.0 (compatible; GenericCrawler/1.0)'
                 }
             )
             
