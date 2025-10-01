@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crawler - Create Crawler</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="search.html" class="logo">🕷️ Crawler</a>
+            <ul class="nav-links">
+                <li><a href="search.html">Search</a></li>
+                <li><a href="crawler.html" class="active">Create Crawler</a></li>
+                <li><a href="status.html">Crawler Status</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Statistics Bar -->
+    <div class="crawler-input-bar">
+        <div class="crawler-input-container">
+            <div class="stats-display">
+                <div class="stat-item">
+                    <span class="stat-label">URLs Visited:</span>
+                    <span class="stat-value" id="statVisitedUrls">-</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Words in DB:</span>
+                    <span class="stat-value" id="statWordsInDb">-</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">🕷️ Active Crawlers:</span>
+                    <span class="stat-value" id="statActiveCrawlers">-</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Total Created:</span>
+                    <span class="stat-value" id="statTotalCrawlers">-</span>
+                </div>
+                <div class="stat-actions">
+                    <button id="clearDataBtn" class="btn-small btn-danger" title="Clear All Data">
+                        🗑️ Clear
+                    </button>
+                    <button id="refreshStatsBtn" class="btn-small btn-secondary" title="Refresh Statistics">
+                        🔄
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+
+        <div class="form-container compact-form">
+            <h1>🚀 Create New Crawler</h1>
+            
+            <form id="crawlerForm" class="slim-form">
+                <!-- Primary Parameters -->
+                <div class="form-row">
+                    <div class="form-group flex-2">
+                        <label for="origin">Origin URL *</label>
+                        <input 
+                            type="url" 
+                            id="origin" 
+                            class="form-input"
+                            placeholder="https://www.wikipedia.org/"
+                            value="https://www.wikipedia.org/"
+                            required
+                        >
+                    </div>
+                    <div class="form-group flex-1">
+                        <label for="maxDepth">Max Depth *</label>
+                        <input 
+                            type="number" 
+                            id="maxDepth" 
+                            class="form-input"
+                            min="1" 
+                            max="1000" 
+                            value="3"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <!-- Advanced Parameters -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="hitRate">Hit Rate (/sec)</label>
+                        <input 
+                            type="number" 
+                            id="hitRate" 
+                            class="form-input"
+                            min="0.1" 
+                            max="1000" 
+                            step="0.1"
+                            value="1"
+                            placeholder="1"
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="queueCapacity">Queue Capacity</label>
+                        <input 
+                            type="number" 
+                            id="queueCapacity" 
+                            class="form-input"
+                            min="100" 
+                            max="100000" 
+                            value="10000"
+                            placeholder="10000"
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="maxUrlsToVisit">Max URLs to Visit</label>
+                        <input 
+                            type="number" 
+                            id="maxUrlsToVisit" 
+                            class="form-input"
+                            min="0" 
+                            max="10000" 
+                            value="100"
+                            placeholder="100"
+                        >
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" id="submitBtn">
+                        🕷️ Start Crawler
+                    </button>
+                </div>
+            </form>
+
+            <div class="success" id="successMessage" style="display: none;"></div>
+            <div class="error" id="errorMessage" style="display: none;"></div>
+            <div class="loading" id="loadingSpinner" style="display: none;">
+                🔄 Creating crawler...
+            </div>
+        </div>
+
+        <!-- Recent Crawlers Section -->
+        <div class="form-container" style="margin-top: 2rem;">
+            <h2>📋 Recent Crawlers</h2>
+            <div id="recentCrawlers">
+                <div class="loading">Loading recent crawlers...</div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                🕷️ Crawler Project<br>
+                Created by <a href="https://www.linkedin.com/in/erenel/" target="_blank">David Dogukan Erenel</a> for Crawler<br>
+                Powered by Cursor ⚡
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/crawler.js"></script>
+</body>
+</html>

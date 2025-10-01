@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crawler - Status</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="search.html" class="logo">🕷️ Crawler</a>
+            <ul class="nav-links">
+                <li><a href="search.html">Search</a></li>
+                <li><a href="crawler.html">Create Crawler</a></li>
+                <li><a href="status.html" class="active">Crawler Status</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Compact Crawler ID Input Bar -->
+    <div class="crawler-input-bar">
+        <div class="crawler-input-container">
+            <form id="statusForm" class="crawler-input-form">
+                <label for="crawlerId" class="input-label">🕷️ Crawler ID:</label>
+                <input 
+                    type="text" 
+                    id="crawlerId" 
+                    class="crawler-input"
+                    placeholder="Enter crawler ID (e.g., 1727123456_78901234)"
+                    required
+                >
+                <button type="submit" class="btn btn-primary crawler-btn">
+                    📊 View Status
+                </button>
+            </form>
+            <div class="error" id="errorMessage" style="display: none;"></div>
+            <div class="loading" id="loadingSpinner" style="display: none;">
+                🔄 Loading...
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+
+        <!-- Status Display Section -->
+        <div class="status-container" id="statusContainer" style="display: none;">
+            <div class="status-header">
+                <h2 id="statusTitle">Crawler Status</h2>
+                <div>
+                    <span class="status-badge" id="statusBadge">Unknown</span>
+                    <button class="btn" id="refreshBtn" style="margin-left: 1rem;">🔄 Refresh</button>
+                    <button class="btn" id="pauseBtn" style="margin-left: 0.5rem; display: none;">⏸️ Pause</button>
+                    <button class="btn" id="resumeBtn" style="margin-left: 0.5rem; display: none;">▶️ Resume</button>
+                    <button class="btn" id="stopBtn" style="margin-left: 0.5rem; display: none;">🛑 Stop</button>
+                </div>
+            </div>
+
+            <!-- Crawler Details -->
+            <div class="form-row" style="margin-bottom: 2rem;">
+                <div>
+                    <strong>Origin URL:</strong><br>
+                    <a href="#" id="originUrl" target="_blank" class="result-url">-</a>
+                </div>
+                <div>
+                    <strong>Max Depth:</strong> <span id="maxDepth">-</span><br>
+                    <strong>Hit Rate:</strong> <span id="hitRate">-</span> hits/sec
+                </div>
+            </div>
+
+            <div class="form-row" style="margin-bottom: 2rem;">
+                <div>
+                    <strong>URLs Visited:</strong> <span id="visitedCount">-</span><br>
+                    <strong>Queue Size:</strong> <span id="queueSize">-</span>
+                </div>
+                <div>
+                    <strong>Started:</strong> <span id="startTime">-</span><br>
+                    <strong>Last Update:</strong> <span id="lastUpdate">-</span>
+                </div>
+            </div>
+
+            <!-- Live Status Indicator -->
+            <div id="liveIndicator" style="display: none; margin-bottom: 1rem;">
+                <span style="color: #137333; font-weight: 500;">
+                    🟢 Live updates enabled (refreshing every 3 seconds)
+                </span>
+            </div>
+
+            <!-- Current Queue -->
+            <div style="margin-bottom: 2rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                    <h3>📋 Current Queue</h3>
+                    <button id="downloadQueueBtn" class="btn btn-small" disabled title="Download queue as text file">
+                        💾 Download Queue
+                    </button>
+                </div>
+                <div id="queueContainer" style="background: #f8f9fa; border-radius: 4px; padding: 1rem; min-height: 60px;">
+                    <div class="loading">Loading queue...</div>
+                </div>
+            </div>
+
+            <!-- Logs Section -->
+            <div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                    <h3>📜 Crawler Logs</h3>
+                    <button id="downloadLogsBtn" class="btn btn-small" disabled title="Download logs as text file">
+                        💾 Download Logs
+                    </button>
+                </div>
+                <div class="logs-container" id="logsContainer">
+                    Loading logs...
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Crawlers Section -->
+        <div class="form-container" style="margin-top: 2rem;">
+            <h2>📋 All Crawlers</h2>
+            <p style="margin-bottom: 1rem; color: #5f6368;">
+                Click on any crawler ID to view its status.
+            </p>
+            <div id="allCrawlers">
+                <div class="loading">Loading crawlers...</div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                🕷️ Crawler Project<br>
+                Created by <a href="https://www.linkedin.com/in/erenel/" target="_blank">David Dogukan Erenel</a> for Crawler<br>
+                Powered by Cursor ⚡
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/status.js"></script>
+</body>
+</html>

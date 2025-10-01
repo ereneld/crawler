@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crawler - Search</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="search.html" class="logo">🕷️ Crawler</a>
+            <ul class="nav-links">
+                <li><a href="search.html" class="active">Search</a></li>
+                <li><a href="crawler.html">Create Crawler</a></li>
+                <li><a href="status.html">Crawler Status</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="search-container">
+            <div class="search-logo">🔍 Search</div>
+            
+            <form class="search-form" id="searchForm">
+                <input 
+                    type="text" 
+                    class="search-input" 
+                    id="searchInput"
+                    placeholder="Search crawled content..."
+                    autocomplete="off"
+                    required
+                >
+                
+                <div class="search-buttons">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                    <button type="button" class="btn" id="luckyBtn">I'm Feeling Lucky</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="results-container" id="resultsContainer" style="display: none;">
+            <div id="resultsInfo"></div>
+            <div id="resultsList"></div>
+            <div id="pagination"></div>
+        </div>
+
+        <div class="loading" id="loadingSpinner" style="display: none;">
+            <div>🔄 Searching...</div>
+        </div>
+
+        <div class="error" id="errorMessage" style="display: none;"></div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                🕷️ Crawler Project<br>
+                Created by <a href="https://www.linkedin.com/in/erenel/" target="_blank">David Dogukan Erenel</a> as a side project<br>
+                Powered by Cursor ⚡
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/search.js"></script>
+</body>
+</html>
